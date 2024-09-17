@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        background-color: #333;
+        font-family: monospace;
+        line-height: 1.6em;
+        color: whitesmoke;
+      }
+      h1 {
+        color: silver;
+        font-size: 40px;
+      }
+      h2 {
+        color: aqua;
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+      input  {
+        padding: 10px 15px;
+        border-radius: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: aqua;
+        color: #333;
+        cursor: pointer;
+        padding: 10px 15px;
+        margin-top: 5px;
+        border-radius: 20px;
+      }
+    </style>
+    <title>Muhammad Faiz</title>
+  </head>
+  <body>
+    <div id="profile" style="margin-top: 20px; border: 1px solid gray; padding: 10px">
+        <h1>Muhammad Faiz</h1>
+        <img src="profile.png" alt="profile image" style="width: 200px; height: 200px;">
+        <p>
+        Nama Saya Muhammad <b>Faiz</b>, Saya Mahasiswa <strong>Universitas Muhammadiyah
+        Cirebon</strong> - jurusan Teknik Informatika - Semester 5.
+        </p>
+    </div>
+
+    <div id="hobi" style="margin-top: 20px; border: 1px solid gray; padding: 10px">
+      <h2>Hobi :</h2>
+      <ul>
+        <li>Nonton Film</li>
+        <li>Denger Musik</li>
+        <li>Nonton King Barca</li>
+        <li>Main Game tipis tipis</li>
+      </ul>
+      <h2>Makanan Favorit :</h2>
+      <ol>
+        <li>Indomie Goreng Rendang</li>
+        <li>Nasi Goreng</li>
+        <li>Ayam Goreng</li>
+        <li>Mie Ayam</li>
+      </ol>
+    </div>
+
+    <div id="kontak" style="margin-top: 20px; border: 1px solid gray; padding: 10px">
+      <h2>Informasi Kontak</h3>
+      <table border="1">
+        <tr>
+          <th>Detail</th>
+          <th>Informasi</th>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>mfaiz2727@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Telepon</td>
+          <td>081321242040</td>
+        </tr>
+        <tr>
+          <td>Instagram</td>
+          <td>@empaiss</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="formPesan" style="margin-top: 20px; border: 1px solid gray; padding: 10px">
+        <form action="/home" method="post">
+            <h2>Hubungi Saya</h2>
+            <label id="name">Nama:</label>
+            <input type="text" placeholder="Masukkan Nama" />
+            <label id="email">Email:</label>
+            <input type="email" placeholder="Masukkan Email" />
+            <label id="message">Pesan:</label>
+            <input type="text" placeholder="Masukkan Pesan" />
+            <input type="submit" />
+        </form> 
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
